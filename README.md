@@ -1,6 +1,8 @@
 # etch-a-sketch-project
 
-Welcome to my final JavaScript Fundamentals project! This is part of The Odin Project curriculum. 
+This is part of The Odin Project curriculum. 
+
+Oh yeah, it's all coming together. Welcome to another JavaScript Fundamentals project! 
 
 The assignment is to create a webpage with a 16 x 16 square grid that fills in each square when moused over,
 so that it looks like an etch-a-sketch. 
