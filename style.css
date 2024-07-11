@@ -1,0 +1,7 @@
+.childDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6.25%;
+    border-style: groove;
+}
