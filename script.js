@@ -28,13 +28,19 @@ createGrid(16);
 // calls createGrid with user-specified number of squares 
 promptBtn.addEventListener("click", function(e) {
     let userInput = prompt("How many squares should each row and column have?", "Enter number lower than 100");
-    if (userInput <= 100) {
+    if (userInput <= 100 && userInput >= 1) {
         const squares = boxContainer.querySelectorAll(".square");
         squares.forEach((s) => {
             s.remove();
         });
         createGrid(userInput);
-    } else {
+    } else if (userInput > 100) {
         alert("Your number is too high! Try again.");
+    } else if (userInput < 1) {
+        alert("You entered a negative number. Try again with a positive one.");
+    } else if (isNaN(userInput)) {
+        alert("Oops! A letter and/or special character must have slipped in there. Try again with numbers only.");
+    } else {
+        alert("Error: response not recognized. Try again.");
     }
 });
